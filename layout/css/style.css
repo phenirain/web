@@ -3,6 +3,7 @@
 *{box-sizing: border-box; margin:0; padding:0; font-family: 'Poppins', sans-serif;}
 a{color: inherit}
 
+
 header {
     background: url("/images/Bitmap\(back\).png") round;
     height: 1015px;
@@ -23,8 +24,8 @@ header {
 
 .container-new {
     width: 1300px;
-    margin: 0 auto;
-    padding: 0 15%;
+    padding: 0 100px;
+    margin: auto;
 }
 
 .header-info h3 {
@@ -48,7 +49,6 @@ header {
 
 main {
     padding-top: 150px;
-    padding-bottom: 150px;
     color: #4D533C;
 }
 
@@ -105,3 +105,140 @@ main h1 {
     color:#FFD723;
 }
 
+.main__footer {
+    background-color: #FAFAFA;
+    margin-top: 150px;
+    width: 1275px;
+    height: 362px;
+    padding: 70px 0 70px 160px;
+    margin-bottom: -181px;
+}
+
+.main__footer .action {
+    color: #D4D6D4;
+}
+
+.main__footer h1 {
+    color: #4D533C;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 74px;
+    margin-bottom: 50px;
+    width: 822px;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    padding-top: 301px;
+    background-color: #4F553D;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+
+footer hr {
+    color: #5D6544;
+    opacity: 20%;
+}
+
+footer p {
+    color: #B6C197;
+}
+
+.us {
+    display: flex;
+    height: 88px;
+    font-size: 16px;
+    line-height: 40px;
+    gap: 70px;
+    margin-bottom: 50px;
+}
+
+.us p:nth-child(even) {
+    font-weight: 700;
+    color: #fff;
+}
+
+.about-us {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    gap: 110px;
+    justify-content: space-between;
+}
+
+.help {
+    display: flex;
+    gap: 100px;
+}
+
+.help p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.service-help {
+    display: flex;
+    gap: 70px;
+}
+
+.company-hr {
+    display: flex;
+    gap: 10px;
+}
+
+.help-block {
+    width: 160px;
+}
+
+.block-header {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 38px;
+    color: #fff;
+}
+
+.vertical {
+    height: 210px;
+    width: 1.3px;
+    background-color: #B6C197;
+    opacity: 20%;
+}
+.intouch {
+    width: 322px;
+}
+
+
+.intouch .block-header {
+    margin-bottom: 20px;
+}
+.us-email {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 38px;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.us-icons {
+    display: flex;
+    gap: 11px;
+}
+.oval {
+    width: 33px;
+    height: 33px;
+    background-color: #444A34;
+    border-radius: 50%;
+}
+.down-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    color: #B5C096;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    align-items: flex-end;
+}
