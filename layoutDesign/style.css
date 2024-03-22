@@ -1,0 +1,625 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{box-sizing: border-box; margin:0; padding:0; font-family: 'Roboto', sans-serif;}
+a{color: inherit; text-decoration: none; cursor: pointer;}
+
+header {
+    background-color: #E7F066;
+    height: 800px;
+    display: flex;
+    gap: 40px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+}
+
+.header-image {
+    position: relative;
+    display: inline-block;
+  }
+  
+.background-image {
+display: block;
+width: 1080px;
+height: 690px;
+}
+
+.overlay {
+position: absolute;
+top: 25px;
+left: 25px;
+}
+
+.text {
+color: white;
+font-size: 12px;
+z-index: 1;
+padding-left: 15px;
+letter-spacing: 1.2px;
+opacity: 0.7;
+line-height: 13px;
+}
+
+.svg-image {
+z-index: 1; 
+margin-bottom: 100px;
+}
+
+.header-text {
+    margin-top: 35px;
+    margin-left: 40px;
+    font-size: 25px;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+}
+
+.right-up {
+    padding-top: 25px;
+}
+
+.right-up nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+    margin-bottom: 45px;
+}
+
+.cart {
+    font-size: 13px;
+    line-height: 13px;
+    letter-spacing: 1.2px;
+}
+
+.burger {
+    margin-top: -15px;
+}
+
+.right-text {
+    width: 275px;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+.right-up hr {
+    width: 140px;
+    background-color:black;
+    margin-bottom: 300px;
+}
+
+.go-shop {
+    font-size: 12px;
+    line-height: 19px;
+    letter-spacing: 1.2px;
+}
+.right-down {
+    color: white;
+}
+
+.right-down hr {
+    width: 87px;
+    background-color: white;
+}
+.block {
+    position: absolute;
+    background-color: black;
+    width: 380px;
+    height: 255px;
+    margin-left: -80px;
+    z-index: 1;
+    padding: 50px;
+}
+
+.block div {
+    width: 275px;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.5px;
+}
+
+.block hr {
+    margin-top: 7px;
+}
+
+.learn-more {
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: 19px;
+    letter-spacing: 1.2px;
+}
+
+
+.item {
+    display: grid;
+    grid-template-columns: auto 1065px;
+    height: 800px;
+    padding-left: 40px;
+    color: #B2B2B2;
+}
+
+
+.left-side {
+    padding: 40px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.item-title {
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0.5px;
+}
+
+.pink .item-desc div {
+    font-size: 15px;
+}
+
+.item-desc div{
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.5px;
+    padding-bottom: 20px;
+    width: 278px;
+}
+.ref {
+    font-size: 12px;
+    line-height: 19px;
+    letter-spacing: 1.2px;
+}
+
+.item hr {
+    background-color: #B2B2B2;
+}
+
+.brown {
+    background-color: #9C8554;
+}
+
+.pink {
+    background-color: #A26779;
+}
+
+.grey {
+    background-color: #504B4D;
+}
+
+.red {
+    background-color: #B04836;
+}
+
+.hand {
+    width: 217px;
+}
+
+.view {
+    width: 76px;
+}
+
+.shop {
+    width: 128px;
+}
+
+.hold {
+    width: 79px;
+}
+
+.item-product {
+    padding-top: 40px;
+    font-size: 25px;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+    text-align: end;
+    padding-right: 40px;
+}
+
+.lemon-topUp {
+    height: 800px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    overflow: hidden;
+}
+.lemon-item {
+    position: relative;
+    /* display: inline-block; */
+}
+.lemon-text {
+    position: absolute;
+    bottom: 45px;
+    left: 40px;
+    font-size: 12px;
+    line-height: 19px;
+    letter-spacing: 1.2px;
+}
+
+.lemon-text hr {
+    background-color: black;
+}
+
+
+.container {
+    width: 100%;
+    padding: 120px 40px 120px 40px;
+    display: flex;
+    gap: 30px;
+}
+
+.container img {
+    width: 796px;
+}
+
+.lipstick-text {
+    padding: 130px 0 130px 0;
+}
+.about {
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+.lipstick-title {
+    width: 234px;
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+    margin-bottom: 40px;
+}
+.lipstick-desc {
+    width: 285px;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+.lipstick-from {
+    width: 310px;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+.lipstick-more {
+    font-size: 12px;
+    line-height: 19px;
+    letter-spacing: 1.2px;
+    margin-bottom: 5px;
+}
+
+.lipstick-text hr {
+    width: 79px;
+    background-color: black;
+}
+
+.hip-hop {
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+}
+
+.hip-about {
+    position: absolute;
+    top: 40px;
+    left: 15px;
+    padding-top: 80px;
+    padding-left: 25px;
+}
+.hip-title {
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+.hip-text {
+    font-size: 25px;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+    margin-bottom: 40px;
+}
+.hip-desc {
+    width: 278px;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.5px;
+}
+.hip-more {
+    font-size: 11px;
+    line-height: 19px;
+    letter-spacing: 1.2px;
+    margin-bottom: 5px;
+}
+
+.hip-hop hr {
+    width: 126px;
+    background-color: black;
+}
+
+footer {
+    padding: 30px 40px;
+    background-color: black;
+    color: #CCCCCC;
+}
+
+.footer-text {
+    padding-top: 20px;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.5px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.footer-block {
+    width: 20px;
+    height: 20px;
+    background-color: #CCCCCC;
+}
+
+.footer-form {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.5px;
+    padding-bottom: 25px;
+}
+
+.footer-form input {
+    width: 280px;
+    border: none;
+    border-bottom: 1px solid #CCCCCC;
+    outline: none;
+    background: transparent;
+    margin-bottom: 10px;
+}
+
+.footer-form button {
+    background-color: inherit;
+    color: #CCCCCC;
+    border: none;
+    height: 20px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+@media screen and (max-width:980px){
+    header {
+        background-color: #E7F066;
+        height: 490px;
+        position: relative;
+    }
+    
+    .header-image {
+        position: absolute;
+        display: inline-block;
+      }
+      
+    .background-image {
+    display: block;
+    height: 300px;
+    width: 100%;
+    }
+    
+    .right {
+        position: absolute;
+        right: 0;
+    }
+    
+    .header-text {
+        position: absolute;
+        margin: 0;
+        bottom: 0;
+        left: 15px;
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 32px;
+        letter-spacing: 0.5px;
+    }
+    
+    
+    .cart {
+        font-weight: bold;
+    }
+    
+    .right-text {
+        color: white;
+        opacity: 0.9;
+        width: 140px;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.5px;
+        margin-bottom: 20px;
+    }
+    
+    .right-up hr {
+        width: 140px;
+        background-color:white;
+        margin-bottom: 0;
+    }
+    
+    .go-shop {
+        color: white;
+    }
+    
+    .block {
+        position: absolute;
+        background-color: black;
+        width: 360px;
+        height: 200px;
+        margin-left: -200px;
+        z-index: 1;
+        padding: 25px;
+    }
+    
+    
+    .item {
+        display: flex;
+        flex-direction: column;
+        height: 420px;
+        padding-left: 0;
+        color: white;
+    }
+
+    .item img {
+        height: 390px;
+    }
+
+    .item hr {
+        background-color: #fff;
+    }
+    
+    .left-side {
+        order: 2;
+        position: absolute;
+        z-index: 1;
+        height: 350px;
+        padding: 0;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    .right-side {
+        order: 1;
+        position: relative;
+    }
+
+    .right-side img {
+        display: block;
+        width: 700px;
+    }
+    
+    .pink {
+        font-weight: bold;
+    }
+
+    .pink img {
+        opacity: 0.6;
+    }
+
+    .grey .item-desc{
+        margin-bottom: -30px;
+    }
+    .item-desc .item-desc-text {
+        width: 170px;
+    }
+
+    .red img {
+        margin-left: -40px;
+    }
+    
+    .item-product {
+        padding-top: 5px;
+        font-size: 19px;
+        line-height: 26px;
+        letter-spacing: 0.5px;
+        text-align: end;
+        padding-right: 5px;
+    }
+    
+    .lemon-topUp {
+        height: 860px;
+        display: block;
+    }
+
+    .lemon-item + .lemon-item {
+        margin-top: -10px;
+    }
+
+    .lemon-item img {
+        width: 390px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 50px 0 20px 20px;
+        display: block;
+        gap: 30px;
+    }
+    
+    .container img {
+        height: 100%;
+        width: 460px;
+    }
+    
+    .lipstick-text {
+        padding: 20px 0 30px 0;
+    }
+
+    .about {
+        font-size: 14px;
+        line-height: 19px;
+        margin-bottom: 5px;
+    }
+
+    .lipstick-title {
+        font-size: 26px;
+        line-height: 30px;
+        letter-spacing: 0.5px;
+        margin-bottom: 10px;
+    }
+    .lipstick-desc {
+        font-size: 15px;
+        line-height: 19px;
+        letter-spacing: 0.5px;
+        margin-bottom: 10px;
+    }
+    .lipstick-from {
+        width: 310px;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.5px;
+        margin-bottom: 50px;
+    }
+    
+    .hip-hop img {
+        margin-left: -600px;
+        opacity: 0.8;
+    }
+
+    .hip-hop {
+        color: white;
+    }
+
+    .hip-title {
+        margin-bottom: 40px;
+    }
+
+    .hip-text {
+        margin-bottom: 60px;
+    }
+    .hip-desc {
+        width: 180px;
+        margin-bottom: 140px;
+    }
+    .hip-more {
+        font-size: 15px;
+        line-height: 23px;
+        letter-spacing: 1.4px;
+        margin-bottom: 5px;
+    }
+    
+    .hip-hop hr {
+        width: 158px;
+        background-color: white;
+    }
+    
+    footer {
+        padding: 20px;
+    }
+
+    .footer-text-about {
+        width: 80%;
+    }
+
+    .footer-form {
+        display: block;
+    }
+    
+    .footer-form button {
+        margin-top: 20px;
+    }
+    
+}
