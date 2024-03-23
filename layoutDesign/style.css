@@ -8,6 +8,7 @@ header {
     height: 800px;
     display: flex;
     gap: 40px;
+    overflow: hidden;
 }
 
 hr {
@@ -138,6 +139,7 @@ margin-bottom: 100px;
     height: 800px;
     padding-left: 40px;
     color: #B2B2B2;
+    overflow: hidden;
 }
 
 
@@ -238,6 +240,10 @@ margin-bottom: 100px;
     background-color: black;
 }
 
+
+.lipstick {
+    overflow: hidden;
+}
 
 .container {
     width: 100%;
