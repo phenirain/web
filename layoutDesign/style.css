@@ -526,7 +526,7 @@ footer {
     }
     
     .lemon-topUp {
-        height: 860px;
+        height: 100%;
         display: block;
     }
 
@@ -535,7 +535,7 @@ footer {
     }
 
     .lemon-item img {
-        width: 390px;
+        width: 100%;
     }
 
     .container {
