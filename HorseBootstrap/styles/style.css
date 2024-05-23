@@ -25,6 +25,7 @@ header a:hover {
 
 .main-btn:not(:last-child) {
     margin-right: 10px;
+    margin-bottom: 5px;
 }
 button:hover {
     color: wheat;
@@ -68,5 +69,9 @@ hr {
     height: 200px;
 }
 
-
+@media (max-width: 352px)  {
+    .main-btn:last-child {
+        margin-right: 10px;
+    }
+}
 
