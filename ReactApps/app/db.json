@@ -1,53 +1,48 @@
 {
-    "tables": [
+    "phones": [
         {
-            "from":"russian",
-            "material":"stone",
+            "id": "1",
+            "from":"Russia",
+            "mark":"RuPhone",
+            "model": "ruOne",
             "price":"10000"
         },
         {
+            "id": "2",
             "from":"USA",
-            "materal":"dark wood",
-            "price":"1000"
+            "mark": "Apple",
+            "model":"Iphone 15 Pro",
+            "price":"99000"
         },
         {
-            "from":"swiss",
-            "material":"red wood",
-            "price":"50000"
+            "id": "3",
+            "from":"USA",
+            "mark": "Apple",
+            "model":"Iphone 15",
+            "price":"87000"
         }
     ],
-    "cupboards": [
+    "laptops": [
         {
-            "from":"russian",
-            "material":"stone",
-            "price":"10000"
+            "id": "1",
+            "from":"Russia",
+            "mark": "RuPhone",
+            "model": "ruLapOne",
+            "price":"67000"
         },
         {
+            "id": "2",
             "from":"USA",
-            "material":"dark wood",
-            "price":"1000"
+            "mark": "Apple",
+            "model": "MacBook Air 13\" M3",
+            "price":"160000"
         },
         {
-            "from":"swiss",
-            "material":"red wood",
-            "price":"50000"
-        }
-    ],
-    "chairs": [
-        {
-            "from":"russian",
-            "material":"stone",
-            "price":"10000"
-        },
-        {
+            "id": "3",
             "from":"USA",
-            "material":"dark wood",
-            "price":"1000"
-        },
-        {
-            "from":"swiss",
-            "material":"red wood",
-            "price":"50000"
+            "mark": "Apple",
+            "model": "MacBook Air 15\" M3",
+            "price":"140000"
         }
     ]
 }

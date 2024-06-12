@@ -7,11 +7,11 @@ import {Link, Route, Routes} from 'react-router-dom'
 
 const App = () => {
 
-  const [testData, setCart] = useState([])
+  const [cart, setCart] = useState([])
 
   useEffect(() => {
       async function axiosData() {
-        const cartData = await axios.get('http://localhost:3001/tables')
+        const cartData = await axios.get('http://localhost:3001/phones')
         setCart(cartData.data)
       }
       axiosData()
@@ -21,9 +21,9 @@ const App = () => {
       <Header/>
       <Routes>
         <Route
-          path="/tables"
+          path="/phones"
           element={
-            <CartItem item={testData}/>
+            <CartItem item={cart}/>
           }
         />
         <Route

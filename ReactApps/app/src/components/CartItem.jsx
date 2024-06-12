@@ -11,7 +11,8 @@ const CartItem = (props) => {
                 id={obj.id}
                 
                 from={obj.from}
-                material={obj.material}
+                mark={obj.mark}
+                model={obj.model}
                 price={obj.price}
                 />
             })

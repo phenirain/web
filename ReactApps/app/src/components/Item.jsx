@@ -8,12 +8,15 @@ const Item = (props) => {
   <Card.Body>
     <Card.Title>{props.from}</Card.Title>
     <Card.Text>
-      {props.material}
+      {props.mark}
     </Card.Text>
     <Card.Text>
-      {props.price}
+      {props.model}
     </Card.Text>
-    <Button variant="primary">Go somewhere</Button>
+    <Card.Text>
+      {props.price} Р
+    </Card.Text>
+    <Button variant="primary">Buy</Button>
   </Card.Body>
 </Card>
 }
