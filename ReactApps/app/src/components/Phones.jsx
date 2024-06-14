@@ -1,11 +1,12 @@
 import React from 'react'
+import CartItem from './CartItem';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import CartItem from './CartItem'
 
-const HomeItem = (props) => {
+
+const Phones = (props) => {
   return (
     <div class="container mt-3">
-      <h1>Все товары: </h1>
+      <h1>Телефоны: </h1>
       <CartItem
         item={props.item}
         overlays={props.overlays}
@@ -17,4 +18,4 @@ const HomeItem = (props) => {
   )
 }
 
-export default HomeItem
+export default Phones

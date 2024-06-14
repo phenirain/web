@@ -1,51 +1,56 @@
 {
-    "phones": [
-        {
-            "id": "1",
-            "from":"Russia",
-            "mark":"RuPhone",
-            "model": "ruOne",
-            "price":"10000"
-        },
-        {
-            "id": "2",
-            "from":"USA",
-            "mark": "Apple",
-            "model":"Iphone 15 Pro",
-            "price":"99000"
-        },
-        {
-            "id": "3",
-            "from":"USA",
-            "mark": "Apple",
-            "model":"Iphone 15",
-            "price":"87000"
-        }
-    ],
-    "laptops": [
-        {
-            "id": "1",
-            "from":"Russia",
-            "mark": "RuPhone",
-            "model": "ruLapOne",
-            "price":"67000"
-        },
-        {
-            "id": "2",
-            "from":"USA",
-            "mark": "Apple",
-            "model": "MacBook Air 13\" M3",
-            "price":"160000"
-        },
-        {
-            "id": "3",
-            "from":"USA",
-            "mark": "Apple",
-            "model": "MacBook Air 15\" M3",
-            "price":"140000"
-        }
-    ], 
-    "overlays": [
-        
-    ]
+  "phones": [
+    {
+      "myId": "1",
+      "id": "1",
+      "from": "Russia",
+      "mark": "RuPhone",
+      "model": "ruOne",
+      "price": "10000"
+    },
+    {
+      "myId": "2",
+      "id": "2",
+      "from": "USA",
+      "mark": "Apple",
+      "model": "Iphone 15 Pro",
+      "price": "99000"
+    },
+    {
+      "myId": "3",
+      "id": "3",
+      "from": "USA",
+      "mark": "Apple",
+      "model": "Iphone 15",
+      "price": "87000"
+    }
+  ],
+  "laptops": [
+    {
+      "myId": "1",
+      "id": "1",
+      "from": "Russia",
+      "mark": "RuPhone",
+      "model": "ruLapOne",
+      "price": "67000"
+    },
+    {
+      "myId": "1",
+      "id": "2",
+      "from": "USA",
+      "mark": "Apple",
+      "model": "MacBook Air 13\" M3",
+      "price": "160000"
+    },
+    {
+      "myId": "1",
+      "id": "3",
+      "from": "USA",
+      "mark": "Apple",
+      "model": "MacBook Air 15\" M3",
+      "price": "140000"
+    }
+  ],
+  "overlays": [],
+  "favorites": []
 }

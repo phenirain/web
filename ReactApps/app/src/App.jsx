@@ -1,49 +1,113 @@
 import axios from 'axios'
 import React, { useEffect, useState} from 'react'
-import CartItem from './components/CartItem'
+import Phones from './components/Phones'
 import HomeItem from './components/HomeItem'
 import Header from './components/Header'
 import Overlay from './components/Overlay'
+import Favorite from './components/Favorite'
 import {Link, Route, Routes} from 'react-router-dom'
+
+
+export const AppContext = React.createContext({});
 
 const App = () => {
 
   const [cart, setCart] = useState([])
-  const [overlay, setOverlay] = useState([])
+  const [overlays, setOverlays] = useState([])
+  const [favorites, setFavorites] = useState([])
 
   useEffect(() => {
       async function axiosData() {
         const cartData = await axios.get('http://localhost:3001/phones')
         const overlayData = await axios.get('http://localhost:3001/overlays')
+        const favoriteData = await axios.get('http://localhost:3001/favorites')
         setCart(cartData.data)
-        setOverlay(overlayData.data)
+        setOverlays(overlayData.data)
+        setFavorites(favoriteData.data)
       }
       axiosData()
   })
+
+  const isAdded = (myId, to) => {
+    if (to === "overlays")
+      return overlays.some((objIsAdded) => objIsAdded.myId === myId)
+    else if (to === "favorites")
+      return favorites.some((objIsAdded) => objIsAdded.myId === myId)
+  }
+
+  const deleteItem = (id, from) => {
+    axios.delete(`http://localhost:3001/${from}/${id}`);
+    if (from === "overlays")  
+      setOverlays((over) => over.filter(item => Number(item.id) !== Number(id)));
+    else if (from === "favorites") 
+      setFavorites((favorite) => favorite.filter(favor => Number(favor.id) !== Number(id)));
+  }
+
+  const total_price = overlays.reduce((sum, item) => sum + parseFloat(item.price), 0);
+
   return (
-    <div>
-      <Header/>
-      <Routes>
-        <Route
-          path="/phones"
-          element={
-            <CartItem item={cart}/>
-          }
+
+    <AppContext.Provider
+    value={{
+      cart,
+      setCart,
+      overlays,
+      setOverlays,
+      isAdded,
+    }}
+    >
+      <div>
+        <Header
         />
-        <Route
-          path="/overlay"
-          element={
-            <Overlay item={overlay}/>
-          }
-        />
-        <Route
-          path="/"
-          element={
-            <HomeItem/>
-          }
-        />
-      </Routes>
-    </div>
+        <Routes>
+          <Route
+            path="/phones"
+            element={
+              <Phones
+               item={cart}
+               overlays={overlays}
+               setOverlays={setOverlays}
+               favorites={favorites}
+               setFavorites={setFavorites}
+               />
+            }
+          />
+          <Route
+            path="/overlays"
+            element={
+              <Overlay
+               overlays={overlays}
+               deleteItem={deleteItem}
+               total_price={total_price}
+               />
+            }
+          />
+          <Route
+            path="/favorites"
+            element={
+              <Favorite
+               favorites={favorites}
+               deleteItem={deleteItem}
+               overlays={overlays}
+               setOverlays={setOverlays}
+               />
+            }
+          />
+          <Route
+            path="/"
+            element={
+              <HomeItem
+              item={cart}
+              overlays={overlays}
+              setOverlays={setOverlays}
+              favorites={favorites}
+              setFavorites={setFavorites}
+              />
+            }
+          />
+        </Routes>
+      </div>
+    </AppContext.Provider>
   )
 }
 
