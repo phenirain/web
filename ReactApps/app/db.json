@@ -6,51 +6,181 @@
       "from": "Russia",
       "mark": "RuPhone",
       "model": "ruOne",
-      "price": "10000"
+      "price": "10000",
+      "description": "Budget-friendly smartphone with basic features.",
+      "feature": "Dual SIM"
     },
     {
       "myId": "2",
       "id": "2",
       "from": "USA",
       "mark": "Apple",
-      "model": "Iphone 15 Pro",
-      "price": "99000"
+      "model": "iPhone 15 Pro",
+      "price": "99000",
+      "description": "Flagship model with high-end specifications.",
+      "feature": "Face ID"
     },
     {
       "myId": "3",
       "id": "3",
       "from": "USA",
       "mark": "Apple",
-      "model": "Iphone 15",
-      "price": "87000"
+      "model": "iPhone 15",
+      "price": "87000",
+      "description": "Latest generation iPhone with advanced features.",
+      "feature": "5G"
+    },
+    {
+      "myId": "4",
+      "id": "4",
+      "from": "China",
+      "mark": "Xiaomi",
+      "model": "Mi 12",
+      "price": "25000",
+      "description": "Affordable smartphone with excellent performance.",
+      "feature": "Fast Charging"
+    },
+    {
+      "myId": "5",
+      "id": "5",
+      "from": "South Korea",
+      "mark": "Samsung",
+      "model": "Galaxy S21",
+      "price": "60000",
+      "description": "High-end Android phone with great camera capabilities.",
+      "feature": "Triple Camera"
+    },
+    {
+      "myId": "6",
+      "id": "6",
+      "from": "China",
+      "mark": "Huawei",
+      "model": "P40",
+      "price": "40000",
+      "description": "Flagship phone with powerful hardware and features.",
+      "feature": "AI Camera"
+    },
+    {
+      "myId": "7",
+      "id": "7",
+      "from": "USA",
+      "mark": "Google",
+      "model": "Pixel 6",
+      "price": "50000",
+      "description": "Pure Android experience with cutting-edge AI.",
+      "feature": "Voice Assistant"
+    },
+    {
+      "myId": "8",
+      "id": "8",
+      "from": "Japan",
+      "mark": "Sony",
+      "model": "Xperia 5 II",
+      "price": "70000",
+      "description": "Compact smartphone with premium features.",
+      "feature": "OLED Display"
+    },
+    {
+      "myId": "9",
+      "id": "9",
+      "from": "Finland",
+      "mark": "Nokia",
+      "model": "8.3",
+      "price": "30000",
+      "description": "Mid-range smartphone with solid performance.",
+      "feature": "5G"
+    },
+    {
+      "myId": "10",
+      "id": "10",
+      "from": "China",
+      "mark": "Oppo",
+      "model": "Find X3",
+      "price": "45000",
+      "description": "Stylish phone with advanced camera system.",
+      "feature": "Curved Display"
+    },
+    {
+      "myId": "11",
+      "id": "11",
+      "from": "USA",
+      "mark": "OnePlus",
+      "model": "9 Pro",
+      "price": "55000",
+      "description": "Premium phone with smooth performance and fast charging.",
+      "feature": "120Hz Display"
+    },
+    {
+      "myId": "12",
+      "id": "12",
+      "from": "South Korea",
+      "mark": "LG",
+      "model": "Wing",
+      "price": "80000",
+      "description": "Unique dual-screen phone with innovative design.",
+      "feature": "Dual Screen"
+    },
+    {
+      "myId": "13",
+      "id": "13",
+      "from": "Taiwan",
+      "mark": "Asus",
+      "model": "ROG Phone 5",
+      "price": "90000",
+      "description": "Gaming phone with top-tier hardware for gamers.",
+      "feature": "Game Mode"
+    },
+    {
+      "myId": "14",
+      "id": "14",
+      "from": "Canada",
+      "mark": "BlackBerry",
+      "model": "Key2",
+      "price": "40000",
+      "description": "Phone with physical keyboard and enterprise features.",
+      "feature": "Physical Keyboard"
+    },
+    {
+      "myId": "15",
+      "id": "15",
+      "from": "France",
+      "mark": "Alcatel",
+      "model": "3L",
+      "price": "15000",
+      "description": "Budget smartphone with decent features for daily use.",
+      "feature": "Face Unlock"
+    },
+    {
+      "myId": "16",
+      "id": "16",
+      "from": "Germany",
+      "mark": "Gigaset",
+      "model": "GS4",
+      "price": "20000",
+      "description": "Affordable smartphone with good build quality.",
+      "feature": "Removable Battery"
     }
   ],
-  "laptops": [
+  "overlays": [
     {
-      "myId": "1",
       "id": "1",
+      "myId": "1",
       "from": "Russia",
       "mark": "RuPhone",
-      "model": "ruLapOne",
-      "price": "67000"
-    },
-    {
-      "myId": "1",
-      "id": "2",
-      "from": "USA",
-      "mark": "Apple",
-      "model": "MacBook Air 13\" M3",
-      "price": "160000"
-    },
-    {
-      "myId": "1",
-      "id": "3",
-      "from": "USA",
-      "mark": "Apple",
-      "model": "MacBook Air 15\" M3",
-      "price": "140000"
+      "model": "ruOne",
+      "price": "10000",
+      "feature": "Dual SIM"
     }
   ],
-  "overlays": [],
-  "favorites": []
+  "favorites": [
+    {
+      "id": "1",
+      "myId": "1",
+      "from": "Russia",
+      "mark": "RuPhone",
+      "model": "ruOne",
+      "price": "10000",
+      "feature": "Dual SIM"
+    }
+  ]
 }

@@ -26,5 +26,76 @@ code {
   margin-right: 40px;
 }
 
+.row {
+  grid-gap: 30px;
+}
+
+.phone-con {
+  gap:20px;
+}
+
+p {
+  margin: 0;
+}
+
+.filter-gap{
+  gap: 10px;
+}
+
+.overlayFeed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+.form-container {
+  background-color: #ffffff; 
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%; 
+  max-width: 400px;
+  position: relative;
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  color: #333333;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.hidden {
+  display: none;
+}
 
 

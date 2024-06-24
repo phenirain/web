@@ -4,6 +4,7 @@ import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { AppContext } from '../App';
 import axios from 'axios';
+import {motion} from 'framer-motion';
 
 const Favorite = (props) => {
 
@@ -11,7 +12,11 @@ const Favorite = (props) => {
 
 
   return (
-    <div class="container mt-3">
+    <motion.div class="container mt-3" 
+    initial={{opacity: 0, y: 100, x: -100}}
+    animate={{opacity: 1, y: 0, x: 0}}
+    transition={{duration: 0.9}}
+    >
       <h2 class="overlay mb-5">Избранное: </h2>
         
         {
@@ -20,9 +25,14 @@ const Favorite = (props) => {
                 {
                   props.favorites.map(obj => (
                     <div class="col-md-4">
-                      <Card style={{ width: '18rem' }}>
+                      <Card style={{ width: '21rem' }}>
                         <Card.Body>
-                            <Card.Title>Страна: {obj.from}</Card.Title>
+                            <div class="d-flex justify-content-between">
+                              <Card.Title>Страна: {obj.from}</Card.Title>
+                              <Button onClick="">
+                                О товаре
+                              </Button>
+                            </div>
                             <Card.Text>
                             Марка: {obj.mark}
                             </Card.Text>
@@ -32,7 +42,10 @@ const Favorite = (props) => {
                             <Card.Text>
                             Цена: {obj.price}
                             </Card.Text>
-                            <div class="d-flex justify-content-between card-btns">
+                            <Card.Text>
+                            Фича: {obj.feature}
+                            </Card.Text>
+                            <div class="d-flex justify-content-between card-btns mt-2">
                               <Button onClick={() => props.deleteItem(obj.id, "favorites")}>
                                 Удалить
                               </Button>
@@ -64,7 +77,7 @@ const Favorite = (props) => {
             <h1>В избранном пусто</h1>
           )
         }
-    </div>
+    </motion.div>
   )
 }
 

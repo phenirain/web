@@ -5,6 +5,9 @@ import HomeItem from './components/HomeItem'
 import Header from './components/Header'
 import Overlay from './components/Overlay'
 import Favorite from './components/Favorite'
+import Footer from './components/Footer'
+import Feedback from './components/FeedBack'
+import AboutItem from './components/AboutItem'
 import {Link, Route, Routes} from 'react-router-dom'
 
 
@@ -12,6 +15,7 @@ export const AppContext = React.createContext({});
 
 const App = () => {
 
+  const [aboutItem, setAboutItem] = useState([])
   const [cart, setCart] = useState([])
   const [overlays, setOverlays] = useState([])
   const [favorites, setFavorites] = useState([])
@@ -42,6 +46,7 @@ const App = () => {
     else if (from === "favorites") 
       setFavorites((favorite) => favorite.filter(favor => Number(favor.id) !== Number(id)));
   }
+  
 
   const total_price = overlays.reduce((sum, item) => sum + parseFloat(item.price), 0);
 
@@ -54,9 +59,11 @@ const App = () => {
       overlays,
       setOverlays,
       isAdded,
+      aboutItem,
+      setAboutItem
     }}
     >
-      <div>
+      <div class="content">
         <Header
         />
         <Routes>
@@ -105,8 +112,20 @@ const App = () => {
               />
             }
           />
+          <Route
+            path={"/About"}
+            element={<AboutItem direction="About?"
+              item={aboutItem}
+              overlays={overlays}
+              setOverlays={setOverlays}
+              favorites={favorites}
+              setFavorites={setFavorites}
+               />}
+          />
         </Routes>
+        <Feedback/>
       </div>
+      <Footer/>
     </AppContext.Provider>
   )
 }

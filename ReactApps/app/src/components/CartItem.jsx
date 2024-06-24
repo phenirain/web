@@ -1,6 +1,7 @@
 import React from 'react';
 import Item from './Item';
 import axios from 'axios';
+import {motion} from 'framer-motion';
 
 const CartItem = (props) => {
 
@@ -27,7 +28,11 @@ const CartItem = (props) => {
     }
 
   return (
-    <div class="container mt-5">
+    <motion.div class="container mt-5 mb-5"
+    initial={{opacity: 0, y: 100, x: -100}}
+    animate={{opacity: 1, y: 0, x: 0}}
+    transition={{duration: 0.9}}
+    >
       <div class="row">
         {
             props.item.map(obj=> {
@@ -40,12 +45,14 @@ const CartItem = (props) => {
                 mark={obj.mark}
                 model={obj.model}
                 price={obj.price}
+                feature={obj.feature}
+                description={obj.description}
                 onPlus={(cartObj, from) => onAdd(cartObj, from)}
                 />
             })
         }
       </div>
-    </div>
+    </motion.div>
   )
 }
 
